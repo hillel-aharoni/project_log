@@ -12,7 +12,7 @@ suspicion_counts = {
     'ACCESS_FREQUENT': 0
 }
 
-# מונה פניות לכל IP
+# שמונה פניות לכל IP
 ip_access_count = {}
 
 def update_statistics(row, suspicions):
