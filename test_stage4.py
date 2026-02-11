@@ -87,12 +87,12 @@ def test_stage4_functions():
     print("   - המערכת לא תקרוס עם קבצים ענקיים")
     
     print(f"\n=== סיכום בדיקת Generators ===")
-    print(f"✓ קריאת קובץ עם yield - עובד!")
-    print(f"✓ סינון שורות עם yield - עובד!")
-    print(f"✓ הוספת פרטים עם yield - עובד!")
-    print(f"✓ ספירה בלי טעינה - עובד!")
-    print(f"✓ שרשרת generators - עובד!")
-    print(f"✓ המערכת מוכנה לקבצים ענקיים!")
+    print(f"[V] קריאת קובץ עם yield - עובד!")
+    print(f"[V] סינון שורות עם yield - עובד!")
+    print(f"[V] הוספת פרטים עם yield - עובד!")
+    print(f"[V] ספירה בלי טעינה - עובד!")
+    print(f"[V] שרשרת generators - עובד!")
+    print(f"[V] המערכת מוכנה לקבצים ענקיים!")
 
 if __name__ == "__main__":
     test_stage4_functions()
