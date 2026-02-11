@@ -26,8 +26,8 @@ def filter_sensitive_ports(data):
     """
 
     sensitive_ports = {'22', '23', '3389'}
-    sensitive_traffic = [row for row in data 
-                        if len(row) >= 4 and row[3] in sensitive_ports]
+    sensitive_traffic = [row for row in data
+                         if len(row) >= 4 and row[3] in sensitive_ports]
     return sensitive_traffic
 
 
@@ -37,8 +37,8 @@ def filter_large_packets(data):
     ארגומנטים:   נתוני תעבורת רשת כרשימה
     מחזיר:  רשימה עם חבילות הגדולות מ‑5000 בתים
     """
-    large_packets = [row for row in data 
-                    if len(row) >= 6 and int(row[5]) > 5000]
+    large_packets = [row for row in data
+                     if len(row) >= 6 and int(row[5]) > 5000]
     return large_packets
 
 

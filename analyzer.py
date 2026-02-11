@@ -12,7 +12,6 @@ def count_by_ip(data):
     """
     return {row[1]: data.count(row) for row in data if len(row) >= 2}
 
-
 def map_port_to_protocol(data):
     """
     ממפה מספר פורט לשם פרוטוקול.
