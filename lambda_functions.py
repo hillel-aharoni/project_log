@@ -64,7 +64,8 @@ def create_suspicion_checks():
         "EXTERNAL_IP": lambda row: len(row) >= 2 and not any(row[1].startswith(prefix) for prefix in INTERNAL_IP_RANGES),
         "SENSITIVE_PORT": lambda row: len(row) >= 4 and row[3] in SENSITIVE_PORTS,
         "LARGE_PACKET": lambda row: len(row) >= 6 and int(row[5]) > LARGE_PACKET_THRESHOLD,
-        "NIGHT_ACTIVITY": lambda row: len(row) > 0 and NIGHT_START_HOUR <= int(row[0].split()[1].split(':')[0]) < NIGHT_END_HOUR
+        "NIGHT_ACTIVITY": lambda row: len(row) > 0 and NIGHT_START_HOUR <= int(row[0].split()[1].split(':')[0]) < NIGHT_END_HOUR,
+        "FREQUENT_ACCESS": lambda row: len(row) >= 2 and row[1] in ["10.0.0.8", "192.168.1.100"]  # דוגמה ל-IP עם גישה תכופה
     }
 
 
